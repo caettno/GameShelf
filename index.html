@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GamesShelf</title>
+</head>
+<body>
+
+  <aside>
+    <header>
+      <p> GamesShelf </p>
+    </header>
+
+    <section>
+      <p> SUA ESTANTE DE JOGOS </p>
+      <h1> Organize o que você joga. Lembre do que sentiu. </h1>
+      <p> Catalogue jogos, acompanhe sua jornada e registre avaliações em um só lugar. </p>
+      
+      <ul>
+        <li>Quero jogar</li>
+        <li>Jogando</li>
+        <li>Concluído</li>
+        <li>Abandonado</li>
+      </ul>
+    
+    </section>
+
+  </aside>
+
+  <main>
+
+    <details name="acesso" open>
+      <summary>Entrar</summary>
+
+      <h2>Bem-vindo de volta</h2>
+      <p>Entre para continuar organizando sua coleção.</p>
+      <form action="#" method="post">
+
+        <p>
+          <label for="login-email">E-mail <abbr title="obrigatório">*</abbr></label><br>
+          <input type="email" id="login-email" name="email" placeholder="voce@exemplo.com" autocomplete="email" required>
+        </p>
+
+        <p>
+          <label for="login-senha">Senha <abbr title="obrigatório">*</abbr></label><br>
+          <input type="password" id="login-senha" name="senha" placeholder="••••••••" autocomplete="current-password" required>
+        </p>
+
+        <p>
+          <label><input type="checkbox" name="lembrar"> Lembrar de mim</label>
+          &nbsp;|&nbsp;
+          <a href="#">Esqueci minha senha</a>
+        </p>
+
+        <p><button type="submit">Entrar na minha estante</button></p>
+      </form>
+
+      <p>Ainda não possui conta? Abra a aba Criar conta abaixo.</p>
+    </details>
+
+    <details name="acesso">
+      <summary>Criar conta</summary>
+
+      <h2>Crie sua estante</h2>
+      <p>Leva menos de um minuto para começar a catalogar.</p>
+
+      <form action="#" method="post">
+        <p>
+          <label for="signup-nome">Nome <abbr title="obrigatório">*</abbr></label><br>
+          <input type="text" id="signup-nome" name="nome" placeholder="Como devemos te chamar?" autocomplete="name" required>
+        </p>
+
+        <p>
+          <label for="signup-email">E-mail <abbr title="obrigatório">*</abbr></label><br>
+          <input type="email" id="signup-email" name="email" placeholder="voce@exemplo.com" autocomplete="email" required>
+        </p>
+
+        <p>
+          <label for="signup-senha">Senha <abbr title="obrigatório">*</abbr></label><br>
+          <input type="password" id="signup-senha" name="senha" placeholder="Mínimo de 8 caracteres" autocomplete="new-password" minlength="8" required>
+        </p>
+
+        <p><button type="submit">Criar conta grátis</button></p>
+      </form>
+    </details>
+
+  </main>
+
+</body>
+</html>

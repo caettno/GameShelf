@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard</title>
+</head>
+<body>
+
+  <aside>
+    <header>
+      <p><strong>GamesShelf</strong></p>
+    </header>
+
+    <nav>
+      <p><small>NAVEGAÇÃO</small></p>
+
+      <ul>
+        <li><a href="dashboard.html"><strong>Dashboard</strong></a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="adicionar-jogo.html">Adicionar jogo</a></li>
+      </ul>
+      
+    </nav>
+
+  </aside>
+
+  <hr>
+
+  <header>
+
+    <p>
+      <small>GamesShelf</small>
+      <label for="busca">Buscar</label>
+      <input type="search" id="busca" name="busca" placeholder="⌘ K">
+      &nbsp;
+      <a href="#" aria-label="Notificações">Notificações</a>
+    </p>
+
+  </header>
+
+  <main>
+
+    <section>
+
+      <h1>Olá, Usuario</h1>
+
+      <p>Aqui está um resumo atualizado da sua estante de jogos.</p>
+      <p><a href="adicionar-jogo.html"><button type="button">+ Adicionar jogo</button></a></p>
+    </section>
+    
+
+    <section aria-label="Resumo da estante">
+
+      <table>
+
+        <tr>
+          <th>Quero jogar</th>
+          <th>Jogando</th>
+          <th>Concluído</th>
+          <th>Abandonado</th>
+        </tr>
+
+        <tr>
+          <td><strong>12</strong><br><small>jogos na estante</small></td>
+          <td><strong>3</strong><br><small>jogos na estante</small></td>
+          <td><strong>28</strong><br><small>jogos na estante</small></td>
+          <td><strong>5</strong><br><small>jogos na estante</small></td>
+        </tr>
+
+      </table>
+
+    </section>
+
+    <section>
+
+      <h2>Jogos recentes</h2>
+
+      <p><small>Últimas alterações na sua coleção</small>
+      <a href="catalogo.html">Ver catálogo completo</a></p>
+
+      <table>
+
+        <thead>
+
+          <tr>
+            <th>Jogo</th>
+            <th>Nota</th>
+            <th>Status</th>
+            <th>Atualizado</th>
+            <th>Ações</th>
+          </tr>
+
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <td><strong>Hades II</strong><br><small>Ação / Roguelike</small></td>
+            <td>9,2</td>
+            <td>Jogando</td>
+            <td>Hoje, 14:32</td>
+            <td><a href="#">⋮</a></td>
+          </tr>
+
+          <tr>
+            <td><strong>Baldur's Gate 3</strong><br><small>RPG</small></td>
+            <td>9,8</td>
+            <td>Concluído</td>
+            <td>Ontem, 20:10</td>
+            <td><a href="#">⋮</a></td>
+          </tr>
+
+          <tr>
+            <td><strong>Hollow Knight</strong><br><small>Metroidvania</small></td>
+            <td>8,9</td>
+            <td>Quero jogar</td>
+            <td>28 set. 2026</td>
+            <td><a href="#">⋮</a></td>
+          </tr>
+
+          <tr>
+            <td><strong>Starfield</strong><br><small>RPG / Ficção</small></td>
+            <td>6,4</td>
+            <td>Abandonado</td>
+            <td>22 set. 2026</td>
+            <td><a href="#">⋮</a></td>
+          </tr>
+
+        </tbody>
+
+      </table>
+
+    </section>
+
+    <aside>
+
+      <section>
+        
+        <h2>Ações rápidas</h2>
+
+        <p><a href="adicionar-jogo.html"><button type="button">+ Adicionar novo jogo</button></a></p>
+        <p><a href="catalogo.html"><button type="button">Explorar catálogo</button></a></p>
+        <p><a href="catalogo.html?status=jogando"><button type="button">▷ Continuar jogando</button></a></p>
+
+      </section>
+
+      <section>
+
+        <h2>Progresso da coleção</h2>
+        <p><label for="progresso">Concluídos</label> <strong>58%</strong></p>
+        <p><small>28 de 48 jogos foram concluídos.</small></p>
+
+      </section>
+
+      <section>
+
+        <h2>Próxima Jogatina</h2>
+        <p><small>Nenhuma meta definida para esta semana.</small></p>
+
+      </section>
+
+    </aside>
+
+  </main>
+
+</body>
+</html>

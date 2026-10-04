@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GamesShelf — Hades II</title>
+</head>
+<body>
+
+  <aside>
+
+    <header>
+      <p><strong>GamesShelf</strong></p>
+    </header>
+
+    <nav aria-label="Navegação principal">
+      <p><small>NAVEGAÇÃO</small></p>
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="catalogo.html" aria-current="page"><strong>Catálogo</strong></a></li>
+        <li><a href="adicionar-jogo.html">Adicionar jogo</a></li>
+      </ul>
+    </nav>
+
+    <footer>
+        <p> Usuario <br>
+        <small> usuario@gmail.com </small> </p>
+    </footer>
+
+  </aside>
+
+  <hr>
+
+  <header>
+
+    <p>
+      <small>GamesShelf / Catálogo / Hades II</small>
+      <span></span>
+      <label for="busca">Buscar</label>
+      <input type="search" id="busca" name="busca" placeholder="">
+      <span></span>
+      <a href="#" aria-label="Notificações">Notificações</a>
+    </p>
+
+  </header>
+
+  <hr>
+
+  <main>
+    <p>
+      <a href="catalogo.html">← Voltar ao catálogo</a>
+      <span></span>>
+      <button type="button"> Excluir </button>
+      <a href="editar-jogo.html"><button type="button"> Editar jogo </button></a>
+    </p>
+
+    <article>
+
+      <aside>
+        <figure>
+          <p>Capa</p>
+          <img src="../assets/imgs/Hades.jpg" alt="Capa de Hades II" width="150">
+        </figure>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+          <p>
+            <label for="capa"><small>Substituir pelo upload da capa do jogo.</small></label><br>
+            <input type="file" id="capa" name="capa" accept="image/*">
+          </p>
+        </form>
+
+        <dl>
+          <dt><small>Adicionado em</small></dt>
+          <dd><strong>12 ago. 2026</strong></dd>
+          <dt><small>Última alteração</small></dt>
+          <dd><strong>Hoje, 14:32</strong></dd>
+        </dl>
+      </aside>
+=
+      <section>
+        <h1>Hades II</h1>
+        <p><strong>[Jogando]</strong> Ação • Roguelike • Indie</p>
+
+        <p>
+          <small>MINHA NOTA</small><br>
+          <strong>9,2</strong><br>
+          <small>de 10</small>
+        </p>
+
+        <hr>
+
+        <dl>
+          <dt><small>CATEGORIA</small></dt>
+          <dd><strong>Ação / Roguelike</strong></dd>
+
+          <dt><small>PLATAFORMA</small></dt>
+          <dd><strong>PC (Steam)</strong></dd>
+
+          <dt><small>TEMPO JOGADO</small></dt>
+          <dd><strong>18 h 42 min</strong></dd>
+
+          <dt><small>INICIADO EM</small></dt>
+          <dd><strong>08 set. 2026</strong></dd>
+        </dl>
+
+        <hr>
+
+        <h2>Minha avaliação</h2>
+        <blockquote>
+          <p>Hades II mantém o ritmo viciante do primeiro jogo e aprofunda as possibilidades de combate. A progressão é satisfatória, os personagens têm diálogos excelentes e cada tentativa parece acrescentar algo novo. Ainda está em acesso antecipado, mas já é uma experiência muito completa.</p>
+          <p><small>Avaliação atualizada em 03 out. 2026</small></p>
+        </blockquote>
+      </section>
+
+    </article>
+
+    <section>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Atualizar status da jogatina</legend>
+          <p><small>A alteração será registrada no histórico do jogo.</small></p>
+
+          <p>
+            <label for="novo-status">Novo status</label><br>
+            <select id="novo-status" name="status">
+              <option value="quero-jogar">Quero jogar</option>
+              <option value="jogando" selected>Jogando</option>
+              <option value="concluido">Concluído</option>
+              <option value="abandonado">Abandonado</option>
+            </select>
+          </p>
+
+          <p><button type="submit">Salvar status</button></p>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GamesShelf — Editar jogo</title>
+</head>
+<body>
+
+  <!-- Barra lateral -->
+  <aside>
+    <header>
+      <p><strong>GamesShelf</strong></p>
+    </header>
+
+    <nav aria-label="Navegação principal">
+      <p><small>NAVEGAÇÃO</small></p>
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="adicionar-jogo.html" aria-current="page"><strong>Adicionar jogo</strong></a></li>
+      </ul>
+    </nav>
+
+    <footer>
+        <p> Usuario <br>
+        <small> usuario@gmail.com </small> </p>
+    </footer>
+
+  </aside>
+
+  <hr>
+
+  <!-- Topo -->
+  <header>
+    <p>
+      <small>GamesShelf / Catálogo / Editar jogo</small>
+      <span></span>
+      <label for="busca">Buscar</label>
+      <input type="search" id="busca" name="busca" placeholder="">
+      <span></span>
+      <a href="#" aria-label="Notificações">Notificações</a>
+    </p>
+  </header>
+
+  <hr>
+
+  <main>
+    <p><a href="detalhes-jogo.html">← Voltar ao jogo</a></p>
+
+    <h1>Editar jogo</h1>
+    <p>Atualize as informações de Hades II na sua estante.</p>
+    <p><small>O mesmo formulário é usado no fluxo "Adicionar jogo", com campos vazios.</small></p>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+
+      <!-- 1. Informações principais -->
+      <fieldset>
+        <legend><strong>1. Informações principais</strong></legend>
+
+        <p>
+          <label for="titulo">Título do jogo <abbr title="obrigatório">*</abbr></label><br>
+          <input type="text" id="titulo" name="titulo" value="Hades II" required>
+        </p>
+
+        <p>
+          <label for="nota">Nota <abbr title="obrigatório">*</abbr></label><br>
+          <input type="number" id="nota" name="nota" value="9.2" min="0" max="10" step="0.1" required><br>
+          <small>Use uma nota de 0 a 10.</small>
+        </p>
+
+        <p>
+          <label for="categoria">Categoria <abbr title="obrigatório">*</abbr></label><br>
+          <select id="categoria" name="categoria" required>
+            <option value="">Selecione</option>
+            <option value="acao-roguelike" selected>Ação / Roguelike</option>
+            <option value="aventura">Aventura</option>
+            <option value="metroidvania">Metroidvania</option>
+            <option value="plataforma">Plataforma</option>
+            <option value="rpg">RPG</option>
+          </select>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend><strong>2. Avaliação pessoal</strong></legend>
+        <p><small>Registre sua opinião para consultar depois.</small></p>
+
+        <p>
+          <label for="avaliacao">Avaliação</label><br>
+          <textarea id="avaliacao" name="avaliacao" rows="5" cols="60" maxlength="500">Hades II mantém o ritmo viciante do primeiro jogo e aprofunda as possibilidades de combate. A progressão é satisfatória, os personagens têm diálogos excelentes e cada tentativa acrescenta algo novo.</textarea><br>
+          <small>Máximo de 500 caracteres.</small>
+        </p>
+      </fieldset>
+
+      <!-- 3. Status da jogatina -->
+      <fieldset>
+        <legend><strong>3. Status da jogatina</strong></legend>
+        <p><small>Escolha uma opção para organizar o jogo.</small></p>
+
+        <p>
+          <label><input type="radio" name="status" value="quero-jogar"> <strong>Quero jogar</strong></label><br>
+          <small>Ainda não comecei</small>
+        </p>
+        <p>
+          <label><input type="radio" name="status" value="jogando" checked> <strong>Jogando</strong></label><br>
+          <small>Em andamento</small>
+        </p>
+        <p>
+          <label><input type="radio" name="status" value="concluido"> <strong>Concluído</strong></label><br>
+          <small>Cheguei ao final</small>
+        </p>
+        <p>
+          <label><input type="radio" name="status" value="abandonado"> <strong>Abandonado</strong></label><br>
+          <small>Parei de jogar</small>
+        </p>
+      </fieldset>
+
+      <!-- Capa do jogo -->
+      <fieldset>
+        <legend><strong>Capa do jogo</strong></legend>
+
+        <figure>
+          <img src="../assets/imgs/Hades.jpg" alt="Capa de Hades II" width="150">
+        </figure>
+
+        <p>
+          <label for="capa">Alterar imagem</label><br>
+          <input type="file" id="capa" name="capa" accept="image/jpeg,image/png"><br>
+          <small>JPG ou PNG • máximo 2 MB</small>
+        </p>
+      </fieldset>
+
+      <!-- Ações -->
+      <p>
+        <button type="submit">💾 Salvar alterações</button>
+        <a href="detalhes-jogo.html"><button type="button">Cancelar</button></a>
+      </p>
+      <p><small>As alterações ficarão visíveis no catálogo imediatamente.</small></p>
+      <p><small>ⓘ Em caso de erro, a mensagem aparece abaixo do campo correspondente.</small></p>
+
+    </form>
+  </main>
+
+</body>
+</html>

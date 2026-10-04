@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamesShelf </title>
+</head>
+
+<aside>
+    <header>
+    <p> GamesShelf - Catalogo </p>
+    </header>
+
+    <nav>
+        <h2> <small> Navegação </small> </h2>
+        <ul>
+            <li><a href="dashboard.html"> Dashboard </a></li>
+            <li><a href="catalogo.html" aria-current="page"> <strong> Cátalogo </strong> </a></li>
+            <li><a href="adicionar-jogos.html">Adicionar jogos</a></li>
+        </ul>
+    </nav>
+
+    <footer>
+        <p> Usuario <br>
+        <small> usuario@gmail.com </small> </p>
+    </footer>
+</aside>
+
+<header>
+    <p>
+        <small> GamesShelf - Catalogo </small>
+        <label for="busca-global"> Buscar </label>
+        <input type="search" id="busca-global" name="busca-global">
+        <a href="#" aria-label="Notificações">Notificações</a>
+
+    </p>
+</header>
+<hr>
+
+<body>
+
+    <main>
+        <section>
+            <h1> Catálogo de Jogos </h1>
+            <p> 48 jogos cadastrados na sua estante. Busque, filtre e organize sua coleção </p>
+            <p> <a href="adicionar-jogo.html"> <button type="button"> + Adicionar Jogo </button> </a> </p>
+        </section>
+
+
+        <section aria-label="Filtros">
+            <form action="catalogo.html" method="get"> 
+                <fieldset>  
+                   <legend> Filtro </legend>
+
+                   <p>
+                        <label for="busca"> Buscar Jogo </label> <br>
+                        <input type="search" id="busca" placeholder="Buscar por titulo...">
+                    </p>
+
+                    <p>
+                        <label for="categoria"> Categoria </label> <br>
+                        <select id="categoria" name="categoria">
+                            <option value=""> Todas as categorias </option> 
+                            <option value="acao"> Ação </option>
+                            <option value="rpg"> RPG </option>
+                            <option value="aventura"> Aventura </option>
+                            <option value="plataforma"> Plataforma </option>
+                            <option value="metroidvania"> Metroidvania </option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="status"> Status </label> <br>
+                        <select id="status" name="status">
+                            <option value=""> Todos os status </option>
+                            <option value="quero-jogar"> Quero jogar </option>
+                            <option value="concluido"> Concluido </option>
+                            <option value="jogando"> Jogando  </option>
+                            <option value="abandonado"> Abandonado </option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label id="ordem"> Ordenado por </label> <br>
+                        <select id="ordem" name="ordem">
+                            <option value=""> Mais recentes </option>
+                            <option value="maior-nota"> Maior nota </option>
+                            <option value="titulo"> Titulo (A-Z) </option>
+                        </select>
+                    </p>
+
+                    <div> 
+                    
+                        
+                      <p>
+                          Visualização:
+                          <label> <input type="radio" name="visao" value="grade" checked> Grade </label>
+                          <label> <input type="radio" name="visao" value="lista"> Lista </label>
+                      </p>
+
+                      <p>
+                          <button type="submit"> Aplicar filtros </button>
+                      </p>
+
+                    </div>
+
+                </fieldset>
+            </form>      
+        </section>
+
+        <div>
+            <p><small> Exibindo 1-6 Jogos </small>
+            <span></span>
+            <small> Filtros: Nenhum <a href="catalogo.html"> Limpar </a></small>
+            </p>
+        </div>
+
+
+
+        <section aria-label="Jogos">
+
+            <article>
+                 <p><small>CAPA</small></p>
+                <h2>Hades II</h2>
+                 <p><small>Ação - Roguelike</small></p>
+                 <p>Jogando - 9,2</p>
+                 <p>Combate rápido e uma progressão que sempre convida a mais uma tentativa.</p>
+                <p><a href="detalhes-jogo.html">Ver detalhes →</a> <span></span> <a href="#" aria-label="Mais opções">⋮</a></p>
+            </article>
+            <hr>
+
+            <article>
+                <p><small>CAPA</small></p>
+                <h2>Baldur's Gate 3</h2>
+                <p><small>RPG - Estratégia</small></p>
+                <p>Concluído - 9,8</p>
+                <p>Narrativa profunda, escolhas marcantes e personagens memoráveis.</p>
+                <p><a href="detalhes-jogo.html">Ver detalhes →</a> <span></span> <a href="#" aria-label="Mais opções">⋮</a></p>
+            </article>
+            <hr>
+
+            <article>
+                <p><small>CAPA</small></p>
+                <h2>Hollow Knight</h2>
+                <p><small>Metroidvania</small></p>
+                <p>Quero jogar </p>
+                <p>Adicionado à lista pela exploração e direção de arte.</p>
+                <p><a href="detalhes-jogo.html">Ver detalhes →</a> <span></span> <a href="#" aria-label="Mais opções">⋮</a></p>
+            </article>
+            <hr>
+
+            <article>
+                <p><small>CAPA</small></p>
+                <h2>Starfield</h2>
+                <p><small>RPG • Ficção científica</small></p>
+                <p>Abandonado - 6,4</p>
+                <p>A exploração não sustentou meu interesse após as primeiras horas.</p>
+                <p><a href="detalhes-jogo.html">Ver detalhes →</a> <span></span> <a href="#" aria-label="Mais opções">⋮</a></p>
+            </article>
+            <hr>
+
+            <article>
+                <p><small>CAPA</small></p>
+                <h2>Celeste</h2>
+                <p><small>Plataforma • Indie</small></p>
+                <p>Concluído - 9,0</p>
+                <p>Desafio preciso com uma história sensível e muito bem construída.</p>
+                <p><a href="detalhes-jogo.html">Ver detalhes →</a> <span></span> <a href="#" aria-label="Mais opções">⋮</a></p>
+            </article>
+            <hr>
+
+            <article>
+                <p><small>CAPA</small></p>
+                <h2>Dave the Diver</h2>
+                <p><small>Aventura - Simulação</small></p>
+                <p>Jogando - 8,5</p>
+                <p>Um ciclo relaxante entre exploração, pesca e administração.</p>
+                <p><a href="detalhes-jogo.html">Ver detalhes →</a> <span></span>  <a href="#" aria-label="Mais opções">⋮</a></p>
+            </article>
+            <hr>
+
+        </section>
+
+        <div>
+            <nav>
+                <a href="#"> Anterior </a>
+                <strong aria-label="page"> [1] </strong>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                ...
+                <a href="#">8</a>
+                <a href="#">Proxima</a>
+            </nav>
+        </div>
+
+    </main>
+    
+</body>
+</html>

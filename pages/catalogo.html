@@ -4,65 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GamesShelf </title>
+    <link rel="stylesheet" href="../assets/css/catalogo.css">
 </head>
 
-<aside>
-    <header>
-        <p><strong> GamesShelf / Catalogo </strong> </p>
+<body class="pagina-app">
+
+<aside class="barra-lateral">
+    <header class="marca">
+        <p class="marca__nome"><strong> GamesShelf / Catalogo </strong> </p>
     </header>
 
-    <nav>
-        <p> <small> NAVEGAÇÃO </small> </p>
-        <ul>
-            <li><a href="dashboard.html"> Dashboard </a></li>
-            <li><a href="catalogo.html" aria-current="page"> <strong> Cátalogo </strong> </a></li>
-            <li><a href="editar-jogo.html">Adicionar jogos</a></li>
+    <nav class="menu">
+        <p class="menu__rotulo"> <small> NAVEGAÇÃO </small> </p>
+        <ul class="menu__lista">
+            <li class="menu__item"><a class="menu__link" href="dashboard.html"> Dashboard </a></li>
+            <li class="menu__item"><a class="menu__link menu__link--ativo" href="catalogo.html" aria-current="page"> <strong> Cátalogo </strong> </a></li>
+            <li class="menu__item"><a class="menu__link" href="editar-jogo.html">Adicionar jogos</a></li>
         </ul>
     </nav>
 
-    <footer>
-        <p> Usuario <br>
-        <small> usuario@gmail.com </small> </p>
+    <footer class="usuario">
+        <p class="usuario__nome"> Usuario <br>
+        <small class="usuario__email"> usuario@gmail.com </small> </p>
     </footer>
     
 </aside>
 
-<hr>
+<hr class="divisor">
 
-<header>
-    <p>
-        <small> GamesShelf - Catalogo </small>
-        <label for="busca-global"> Buscar </label>
-        <input type="search" id="busca-global" name="busca-global">
-        <a href="#" aria-label="Notificações">Notificações</a>
-
+<header class="topo">
+    <p class="topo__conteudo">
+        <small class="topo__caminho"> GamesShelf - Catalogo </small>
+        <label class="topo__rotulo" for="busca-global"> Buscar </label>
+        <input class="topo__busca" type="search" id="busca-global" name="busca-global">
+        <a class="topo__notificacoes" href="#" aria-label="Notificações">Notificações</a>
     </p>
 </header>
 
-
-<body>
-
-    <main>
-        <section>
-            <h1> Catálogo de Jogos </h1>
-            <p> 48 jogos cadastrados na sua estante. Busque, filtre e organize sua coleção </p>
-            <p> <a href="editar-jogo.html"> <button type="button"> + Adicionar Jogo </button> </a> </p>
+    <main class="conteudo">
+        <section class="cabecalho-pagina">
+            <h1 class="cabecalho-pagina__titulo"> Catálogo de Jogos </h1>
+            <p class="cabecalho-pagina__descricao"> 48 jogos cadastrados na sua estante. Busque, filtre e organize sua coleção </p>
+            <p class="cabecalho-pagina__acoes"> <a class="link" href="editar-jogo.html"> <button class="botao botao--principal" type="button"> + Adicionar Jogo </button> </a> </p>
         </section>
 
 
-        <section aria-label="Filtros">
-            <form action="catalogo.html" method="get"> 
-                <fieldset>  
-                   <legend> Filtro </legend>
+        <section class="filtros" aria-label="Filtros">
+            <form class="filtros__form" action="catalogo.html" method="get"> 
+                <fieldset class="filtros__grupo">  
+                   <legend class="filtros__titulo"> Filtro </legend>
 
-                   <p>
-                        <label for="busca"> Buscar Jogo </label> <br>
-                        <input type="search" id="busca" placeholder="Buscar por titulo...">
+                   <p class="campo">
+                        <label class="campo__rotulo" for="busca"> Buscar Jogo </label> <br>
+                        <input class="campo__input" type="search" id="busca" placeholder="Buscar por titulo...">
                     </p>
 
-                    <p>
-                        <label for="categoria"> Categoria </label> <br>
-                        <select id="categoria" name="categoria">
+                    <p class="campo">
+                        <label class="campo__rotulo" for="categoria"> Categoria </label> <br>
+                        <select class="campo__select" id="categoria" name="categoria">
                             <option value=""> Todas as categorias </option> 
                             <option value="acao"> Ação </option>
                             <option value="rpg"> RPG </option>
@@ -72,9 +71,9 @@
                         </select>
                     </p>
 
-                    <p>
-                        <label for="status"> Status </label> <br>
-                        <select id="status" name="status">
+                    <p class="campo">
+                        <label class="campo__rotulo" for="status"> Status </label> <br>
+                        <select class="campo__select" id="status" name="status">
                             <option value=""> Todos os status </option>
                             <option value="quero-jogar"> Quero jogar </option>
                             <option value="concluido"> Concluido </option>
@@ -83,26 +82,25 @@
                         </select>
                     </p>
 
-                    <p>
-                        <label id="ordem"> Ordenado por </label> <br>
-                        <select id="ordem" name="ordem">
+                    <p class="campo">
+                        <label class="campo__rotulo" for="ordem"> Ordenado por </label> <br>
+                        <select class="campo__select" id="ordem" name="ordem">
                             <option value=""> Mais recentes </option>
                             <option value="maior-nota"> Maior nota </option>
                             <option value="titulo"> Titulo (A-Z) </option>
                         </select>
                     </p>
 
-                    <div> 
-                    
-                        uyh
-                      <p>
+                    <div class="filtros__extras"> 
+
+                      <p class="filtros__visao">
                           Visualização:
-                          <label> <input type="radio" name="visao" value="grade" checked> Grade </label>
-                          <label> <input type="radio" name="visao" value="lista"> Lista </label>
+                          <label class="opcao"> <input class="opcao__input" type="radio" name="visao" value="grade" checked> Grade </label>
+                          <label class="opcao"> <input class="opcao__input" type="radio" name="visao" value="lista"> Lista </label>
                       </p>
 
-                      <p>
-                          <button type="submit"> Aplicar filtros </button>
+                      <p class="filtros__acoes">
+                          <button class="botao botao--principal" type="submit"> Aplicar filtros </button>
                       </p>
 
                     </div>
@@ -111,88 +109,87 @@
             </form>      
         </section>
 
-        <div>
-            <p><small> Exibindo 1-6 Jogos </small>
-            <span></span>
-            <small> Filtros: Nenhum <a href="catalogo.html"> Limpar </a></small>
+        <div class="resumo">
+            <p class="resumo__texto"><small class="resumo__total"> Exibindo 1-6 Jogos </small>
+            <span class="resumo__separador"></span>
+            <small class="resumo__filtros"> Filtros: Nenhum <a class="link" href="catalogo.html"> Limpar </a></small>
             </p>
         </div>
 
 
+        <section class="lista-jogos" aria-label="Jogos">
 
-        <section aria-label="Jogos">
-
-            <article>
-                <img src="../assets/imgs/Hades.jpg" alt="Capa de Hades II" width="150">
-                <h2>Hades II</h2>
-                 <p><small>Ação - Roguelike</small></p>
-                 <p>Jogando - 9,2</p>
-                 <p>Combate rápido e uma progressão que sempre convida a mais uma tentativa.</p>
-                <p><a href="detalhes-jogo.html">Ver detalhes →</a> <span></span> <a href="#" aria-label="Mais opções">⋮</a></p>
+            <article class="cartao-jogo">
+                <img class="cartao-jogo__capa" src="../assets/imgs/Hades.jpg" alt="Capa de Hades II" width="150">
+                <h2 class="cartao-jogo__titulo">Hades II</h2>
+                <p class="cartao-jogo__generos"><small>Ação - Roguelike</small></p>
+                <p class="cartao-jogo__status">Jogando - 9,2</p>
+                <p class="cartao-jogo__descricao">Combate rápido e uma progressão que sempre convida a mais uma tentativa.</p>
+                <p class="cartao-jogo__acoes"><a class="link" href="detalhes-jogo.html">Ver detalhes →</a> <span class="cartao-jogo__separador"></span> <a class="cartao-jogo__menu" href="#" aria-label="Mais opções">⋮</a></p>
             </article>
-            <hr>
+            <hr class="divisor">
 
-            <article>
-                <img src="../assets/imgs/Baldurs.jpg" alt="Capa de Baldur's Gate 3" width="150">
-                <h2>Baldur's Gate 3</h2>
-                <p><small>RPG - Estratégia</small></p>
-                <p>Concluído - 9,8</p>
-                <p>Narrativa profunda, escolhas marcantes e personagens memoráveis.</p>
-                <p><a href="detalhes-jogo.html">Ver detalhes →</a> <span></span> <a href="#" aria-label="Mais opções">⋮</a></p>
+            <article class="cartao-jogo">
+                <img class="cartao-jogo__capa" src="../assets/imgs/Baldurs.jpg" alt="Capa de Baldur's Gate 3" width="150">
+                <h2 class="cartao-jogo__titulo">Baldur's Gate 3</h2>
+                <p class="cartao-jogo__generos"><small>RPG - Estratégia</small></p>
+                <p class="cartao-jogo__status">Concluído - 9,8</p>
+                <p class="cartao-jogo__descricao">Narrativa profunda, escolhas marcantes e personagens memoráveis.</p>
+                <p class="cartao-jogo__acoes"><a class="link" href="detalhes-jogo.html">Ver detalhes →</a> <span class="cartao-jogo__separador"></span> <a class="cartao-jogo__menu" href="#" aria-label="Mais opções">⋮</a></p>
             </article>
-            <hr>
+            <hr class="divisor">
 
-            <article>
-                <img src="../assets/imgs/Hollow.jpg" alt="Capa de Hollow Knight" width="150">
-                <h2>Hollow Knight</h2>
-                <p><small>Metroidvania</small></p>
-                <p>Quero jogar </p>
-                <p>Adicionado à lista pela exploração e direção de arte.</p>
-                <p><a href="detalhes-jogo.html">Ver detalhes →</a> <span></span> <a href="#" aria-label="Mais opções">⋮</a></p>
+            <article class="cartao-jogo">
+                <img class="cartao-jogo__capa" src="../assets/imgs/Hollow.jpg" alt="Capa de Hollow Knight" width="150">
+                <h2 class="cartao-jogo__titulo">Hollow Knight</h2>
+                <p class="cartao-jogo__generos"><small>Metroidvania</small></p>
+                <p class="cartao-jogo__status">Quero jogar </p>
+                <p class="cartao-jogo__descricao">Adicionado à lista pela exploração e direção de arte.</p>
+                <p class="cartao-jogo__acoes"><a class="link" href="detalhes-jogo.html">Ver detalhes →</a> <span class="cartao-jogo__separador"></span> <a class="cartao-jogo__menu" href="#" aria-label="Mais opções">⋮</a></p>
             </article>
-            <hr>
+            <hr class="divisor">
 
-            <article>
-                <img src="../assets/imgs/Star.jpg" alt="Capa de Starfield" width="150">
-                <h2>Starfield</h2>
-                <p><small>RPG • Ficção científica</small></p>
-                <p>Abandonado - 6,4</p>
-                <p>A exploração não sustentou meu interesse após as primeiras horas.</p>
-                <p><a href="detalhes-jogo.html">Ver detalhes →</a> <span></span> <a href="#" aria-label="Mais opções">⋮</a></p>
+            <article class="cartao-jogo">
+                <img class="cartao-jogo__capa" src="../assets/imgs/Star.jpg" alt="Capa de Starfield" width="150">
+                <h2 class="cartao-jogo__titulo">Starfield</h2>
+                <p class="cartao-jogo__generos"><small>RPG • Ficção científica</small></p>
+                <p class="cartao-jogo__status">Abandonado - 6,4</p>
+                <p class="cartao-jogo__descricao">A exploração não sustentou meu interesse após as primeiras horas.</p>
+                <p class="cartao-jogo__acoes"><a class="link" href="detalhes-jogo.html">Ver detalhes →</a> <span class="cartao-jogo__separador"></span> <a class="cartao-jogo__menu" href="#" aria-label="Mais opções">⋮</a></p>
             </article>
-            <hr>
+            <hr class="divisor">
 
-            <article>
-                <img src="../assets/imgs/Celeste.jpg" alt="Capa de Celeste" width="150">
-                <h2>Celeste</h2>
-                <p><small>Plataforma • Indie</small></p>
-                <p>Concluído - 9,0</p>
-                <p>Desafio preciso com uma história sensível e muito bem construída.</p>
-                <p><a href="detalhes-jogo.html">Ver detalhes →</a> <span></span> <a href="#" aria-label="Mais opções">⋮</a></p>
+            <article class="cartao-jogo">
+                <img class="cartao-jogo__capa" src="../assets/imgs/Celeste.jpg" alt="Capa de Celeste" width="150">
+                <h2 class="cartao-jogo__titulo">Celeste</h2>
+                <p class="cartao-jogo__generos"><small>Plataforma • Indie</small></p>
+                <p class="cartao-jogo__status">Concluído - 9,0</p>
+                <p class="cartao-jogo__descricao">Desafio preciso com uma história sensível e muito bem construída.</p>
+                <p class="cartao-jogo__acoes"><a class="link" href="detalhes-jogo.html">Ver detalhes →</a> <span class="cartao-jogo__separador"></span> <a class="cartao-jogo__menu" href="#" aria-label="Mais opções">⋮</a></p>
             </article>
-            <hr>
+            <hr class="divisor">
 
-            <article>
-                <img src="../assets/imgs/Dave.jpg" alt="Capa de Daven the Diver" width="150">
-                <h2>Dave the Diver</h2>
-                <p><small>Aventura - Simulação</small></p>
-                <p>Jogando - 8,5</p>
-                <p>Um ciclo relaxante entre exploração, pesca e administração.</p>
-                <p><a href="detalhes-jogo.html">Ver detalhes →</a> <span></span>  <a href="#" aria-label="Mais opções">⋮</a></p>
+            <article class="cartao-jogo">
+                <img class="cartao-jogo__capa" src="../assets/imgs/Dave.jpg" alt="Capa de Daven the Diver" width="150">
+                <h2 class="cartao-jogo__titulo">Dave the Diver</h2>
+                <p class="cartao-jogo__generos"><small>Aventura - Simulação</small></p>
+                <p class="cartao-jogo__status">Jogando - 8,5</p>
+                <p class="cartao-jogo__descricao">Um ciclo relaxante entre exploração, pesca e administração.</p>
+                <p class="cartao-jogo__acoes"><a class="link" href="detalhes-jogo.html">Ver detalhes →</a> <span class="cartao-jogo__separador"></span> <a class="cartao-jogo__menu" href="#" aria-label="Mais opções">⋮</a></p>
             </article>
-            <hr>
+            <hr class="divisor">
 
         </section>
 
-        <div>
-            <nav>
-                <a href="#"> Anterior </a>
-                <strong aria-label="page"> [1] </strong>
-                <a href="#">3</a>
-                <a href="#">4</a>
+        <div class="paginacao-area">
+            <nav class="paginacao">
+                <a class="paginacao__link" href="#"> Anterior </a>
+                <strong class="paginacao__atual" aria-label="page"> [1] </strong>
+                <a class="paginacao__link" href="#">3</a>
+                <a class="paginacao__link" href="#">4</a>
                 ...
-                <a href="#">8</a>
-                <a href="#">Proxima</a>
+                <a class="paginacao__link" href="#">8</a>
+                <a class="paginacao__link" href="#">Proxima</a>
             </nav>
         </div>
 

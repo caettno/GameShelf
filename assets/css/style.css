@@ -1,16 +1,3 @@
-:root {
-  --fundo-escuro: #222222;
-  --fundo-claro: #f1f1ef;
-  --branco: #ffffff;
-  --texto: #1c1c1c;
-  --texto-suave: #6f6f6f;
-  --texto-claro: #b5b5b5;
-  --borda-forte: #7d7d7b;
-  --erro: #c0392b;
-  --foco: #1c6ef2;
-}
-
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -20,16 +7,16 @@
 
 .pagina-acesso {
   font-family: system-ui, "Segoe UI", sans-serif;
-  color: var(--texto);
-  background: var(--fundo-claro);
+  color: #1c1c1c;
+  background: #f1f1ef;
   min-height: 100vh;
   display: grid;
   grid-template-columns: 40% 1fr; 
 }
 
 .painel-marca {
-  background: var(--fundo-escuro);
-  color: var(--branco);
+  background: #222222;
+  color: #ffffff;
   padding: 32px 40px;
   display: flex;
   flex-direction: column;
@@ -46,7 +33,7 @@
 .apresentacao__rotulo {
   font-size: 0.7rem;
   letter-spacing: 0.05em;
-  color: var(--texto-claro);
+  color: #b5b5b5;
   margin-bottom: 16px;
 }
 
@@ -59,7 +46,7 @@
 .apresentacao__texto {
   font-size: 0.9rem;
   line-height: 1.6;
-  color: var(--texto-claro);
+  color: #b5b5b5;
   max-width: 36ch;
   margin-bottom: 24px;
 }
@@ -92,8 +79,8 @@
 .aba {
   width: 100%;
   max-width: 440px;
-  background: var(--branco);
-  border: 1px solid var(--borda-forte);
+  background: #ffffff;
+  border: 1px solid #7d7d7b;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -124,13 +111,13 @@
 
 .aba__descricao {
   font-size: 0.85rem;
-  color: var(--texto-suave);
+  color: #6f6f6f;
   margin-bottom: 20px;
 }
 
 .aba__rodape {
   font-size: 0.8rem;
-  color: var(--texto-suave);
+  color: #6f6f6f;
   text-align: center;
   margin-top: 18px;
   margin-bottom: 24px;
@@ -152,7 +139,7 @@
 }
 
 .campo__obrigatorio {
-  color: var(--erro);
+  color: #c0392b;
   text-decoration: none;
 }
 
@@ -161,9 +148,9 @@
   padding: 11px 12px;
   font: inherit;
   font-size: 0.85rem;
-  border: 1px solid var(--borda-forte);
+  border: 1px solid #7d7d7b;
   border-radius: 6px;
-  background: var(--branco);
+  background: #ffffff;
 }
 
 .campo__input::placeholder {
@@ -196,7 +183,7 @@
 .opcao__input {
   width: 15px;
   height: 15px;
-  accent-color: var(--fundo-escuro);
+  accent-color: #222222;
 }
 
 
@@ -218,8 +205,8 @@
 }
 
 .botao--principal {
-  color: var(--branco);
-  background: var(--fundo-escuro);
+  color: #ffffff;
+  background: #222222;
 }
 
 .botao--principal:hover {

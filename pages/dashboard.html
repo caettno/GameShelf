@@ -4,132 +4,133 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dashboard</title>
+  <link rel="stylesheet" href="../assets/css/dashboard.css">
 </head>
-<body>
+<body id="pagina-dashboard" class="pagina-app">
 
-  <aside>
-    <header>
-      <p><strong>GamesShelf - Dashboard</strong></p>
+  <aside id="barra-lateral" class="barra-lateral">
+    <header id="marca" class="marca">
+      <p class="marca__nome"><strong>GamesShelf - Dashboard</strong></p>
     </header>
 
-    <nav>
-      <p><small>NAVEGAÇÃO</small></p>
+    <nav id="menu" class="menu">
+      <p class="menu__rotulo"><small>NAVEGAÇÃO</small></p>
 
-      <ul>
-        <li><a href="dashboard.html"><strong>Dashboard</strong></a></li>
-        <li><a href="catalogo.html">Catálogo</a></li>
-        <li><a href="adicionar-jogo.html">Adicionar jogo</a></li>
+      <ul class="menu__lista">
+        <li class="menu__item"><a class="menu__link menu__link--ativo" href="dashboard.html"><strong>Dashboard</strong></a></li>
+        <li class="menu__item"><a class="menu__link" href="catalogo.html">Catálogo</a></li>
+        <li class="menu__item"><a class="menu__link" href="editar-jogo.html">Adicionar jogos</a></li>
       </ul>
       
     </nav>
 
-   <footer>
-        <p> Usuario <br>
-        <small> usuario@gmail.com </small> </p>
+   <footer id="usuario" class="usuario">
+        <p class="usuario__nome"> Usuario <br>
+        <small class="usuario__email"> usuario@gmail.com </small> </p>
     </footer>
 
   </aside>
 
-  <hr>
+  <hr class="divisor">
 
-  <header>
+  <header id="topo" class="topo">
 
-    <p>
-      <small>GamesShelf</small>
-      <label for="busca">Buscar</label>
-      <input type="search" id="busca" name="busca" placeholder="">
+    <p class="topo__conteudo">
+      <small class="topo__caminho">GamesShelf</small>
+      <label class="topo__rotulo" for="busca">Buscar</label>
+      <input class="topo__busca" type="search" id="busca" name="busca" placeholder="">
       &nbsp;
-      <a href="#" aria-label="Notificações">Notificações</a>
+      <a class="topo__notificacoes" href="#" aria-label="Notificações">Notificações</a>
     </p>
 
   </header>
 
-  <main>
+  <main id="conteudo" class="conteudo">
 
-    <section>
+    <section id="cabecalho-pagina" class="cabecalho-pagina">
 
-      <h1>Olá, Usuario</h1>
+      <h1 class="cabecalho-pagina__titulo">Olá, Usuario</h1>
 
-      <p>Aqui está um resumo atualizado da sua estante de jogos.</p>
-      <p><a href="editar-jogo.html"><button type="button">+ Adicionar jogo</button></a></p>
+      <p class="cabecalho-pagina__descricao">Aqui está um resumo atualizado da sua estante de jogos.</p>
+      <p class="cabecalho-pagina__acoes"><a class="link" href="editar-jogo.html"><button id="botao-adicionar-jogo" class="botao botao--principal" type="button">+ Adicionar jogo</button></a></p>
     </section>
     
 
-    <section aria-label="Resumo da estante">
+    <section id="resumo-estante" class="resumo-estante" aria-label="Resumo da estante">
 
-      <table>
+      <table id="tabela-resumo" class="resumo-estante__tabela">
 
-        <tr>
-          <th>Quero jogar</th>
-          <th>Jogando</th>
-          <th>Concluído</th>
-          <th>Abandonado</th>
+        <tr class="resumo-estante__linha">
+          <th class="resumo-estante__titulo">Quero jogar</th>
+          <th class="resumo-estante__titulo">Jogando</th>
+          <th class="resumo-estante__titulo">Concluído</th>
+          <th class="resumo-estante__titulo">Abandonado</th>
         </tr>
 
-        <tr>
-          <td><strong>12</strong><br><small>jogos na estante</small></td>
-          <td><strong>3</strong><br><small>jogos na estante</small></td>
-          <td><strong>28</strong><br><small>jogos na estante</small></td>
-          <td><strong>5</strong><br><small>jogos na estante</small></td>
+        <tr class="resumo-estante__linha">
+          <td id="total-quero-jogar" class="resumo-estante__item"><strong class="resumo-estante__numero">12</strong><br><small class="resumo-estante__legenda">jogos na estante</small></td>
+          <td id="total-jogando" class="resumo-estante__item"><strong class="resumo-estante__numero">3</strong><br><small class="resumo-estante__legenda">jogos na estante</small></td>
+          <td id="total-concluido" class="resumo-estante__item"><strong class="resumo-estante__numero">28</strong><br><small class="resumo-estante__legenda">jogos na estante</small></td>
+          <td id="total-abandonado" class="resumo-estante__item"><strong class="resumo-estante__numero">5</strong><br><small class="resumo-estante__legenda">jogos na estante</small></td>
         </tr>
 
       </table>
 
     </section>
 
-    <section>
+    <section id="jogos-recentes" class="jogos-recentes">
 
-      <h2>Jogos recentes</h2>
+      <h2 class="jogos-recentes__titulo">Jogos recentes</h2>
 
-      <p><small>Últimas alterações na sua coleção</small>
-      <a href="catalogo.html">Ver catálogo completo</a></p>
+      <p class="jogos-recentes__cabecalho"><small class="jogos-recentes__subtitulo">Últimas alterações na sua coleção</small>
+      <a id="link-ver-catalogo" class="link" href="catalogo.html">Ver catálogo completo</a></p>
 
-      <table>
+      <table id="tabela-jogos" class="tabela">
 
-        <thead>
+        <thead class="tabela__cabeca">
 
-          <tr>
-            <th>Jogo</th>
-            <th>Nota</th>
-            <th>Status</th>
-            <th>Atualizado</th>
-            <th>Ações</th>
+          <tr class="tabela__linha">
+            <th class="tabela__titulo">Jogo</th>
+            <th class="tabela__titulo">Nota</th>
+            <th class="tabela__titulo">Status</th>
+            <th class="tabela__titulo">Atualizado</th>
+            <th class="tabela__titulo">Ações</th>
           </tr>
 
         </thead>
 
-        <tbody>
+        <tbody class="tabela__corpo">
 
-          <tr>
-            <td><strong>Hades II</strong><br><small>Ação / Roguelike</small></td>
-            <td>9,2</td>
-            <td>Jogando</td>
-            <td>Hoje, 14:32</td>
-            <td><a href="#">⋮</a></td>
+          <tr id="jogo-hades-ii" class="tabela__linha">
+            <td class="tabela__celula tabela__celula--jogo"><strong class="jogo__nome">Hades II</strong><br><small class="jogo__generos">Ação / Roguelike</small></td>
+            <td class="tabela__celula tabela__celula--nota">9,2</td>
+            <td class="tabela__celula tabela__celula--status">Jogando</td>
+            <td class="tabela__celula tabela__celula--data">Hoje, 14:32</td>
+            <td class="tabela__celula tabela__celula--acoes"><a class="tabela__menu" href="#">⋮</a></td>
           </tr>
 
-          <tr>
-            <td><strong>Baldur's Gate 3</strong><br><small>RPG</small></td>
-            <td>9,8</td>
-            <td>Concluído</td>
-            <td>Ontem, 20:10</td>
-            <td><a href="#">⋮</a></td>
+          <tr id="jogo-baldurs-gate-3" class="tabela__linha">
+            <td class="tabela__celula tabela__celula--jogo"><strong class="jogo__nome">Baldur's Gate 3</strong><br><small class="jogo__generos">RPG</small></td>
+            <td class="tabela__celula tabela__celula--nota">9,8</td>
+            <td class="tabela__celula tabela__celula--status">Concluído</td>
+            <td class="tabela__celula tabela__celula--data">Ontem, 20:10</td>
+            <td class="tabela__celula tabela__celula--acoes"><a class="tabela__menu" href="#">⋮</a></td>
           </tr>
 
-          <tr>
-            <td><strong>Hollow Knight</strong><br><small>Metroidvania</small></td>
-            <td>8,9</td>
-            <td>Quero jogar</td>
-            <td>28 set. 2026</td>
-            <td><a href="#">⋮</a></td>
+          <tr id="jogo-hollow-knight" class="tabela__linha">
+            <td class="tabela__celula tabela__celula--jogo"><strong class="jogo__nome">Hollow Knight</strong><br><small class="jogo__generos">Metroidvania</small></td>
+            <td class="tabela__celula tabela__celula--nota">8,9</td>
+            <td class="tabela__celula tabela__celula--status">Quero jogar</td>
+            <td class="tabela__celula tabela__celula--data">28 set. 2026</td>
+            <td class="tabela__celula tabela__celula--acoes"><a class="tabela__menu" href="#">⋮</a></td>
           </tr>
 
-          <tr>
-            <td><strong>Starfield</strong><br><small>RPG / Ficção</small></td>
-            <td>6,4</td>
-            <td>Abandonado</td>
-            <td>22 set. 2026</td>
-            <td><a href="#">⋮</a></td>
+          <tr id="jogo-starfield" class="tabela__linha">
+            <td class="tabela__celula tabela__celula--jogo"><strong class="jogo__nome">Starfield</strong><br><small class="jogo__generos">RPG / Ficção</small></td>
+            <td class="tabela__celula tabela__celula--nota">6,4</td>
+            <td class="tabela__celula tabela__celula--status">Abandonado</td>
+            <td class="tabela__celula tabela__celula--data">22 set. 2026</td>
+            <td class="tabela__celula tabela__celula--acoes"><a class="tabela__menu" href="#">⋮</a></td>
           </tr>
 
         </tbody>
@@ -138,30 +139,30 @@
 
     </section>
 
-    <aside>
+    <aside id="painel-lateral" class="painel-lateral">
 
-      <section>
+      <section id="acoes-rapidas" class="acoes-rapidas">
         
-        <h2>Ações rápidas</h2>
+        <h2 class="acoes-rapidas__titulo">Ações rápidas</h2>
 
-        <p><a href="editar-jogo.html"><button type="button">+ Adicionar novo jogo</button></a></p>
-        <p><a href="catalogo.html"><button type="button">Explorar catálogo</button></a></p>
-        <p><a href="catalogo.html?status=jogando"><button type="button">▷ Continuar jogando</button></a></p>
-
-      </section>
-
-      <section>
-
-        <h2>Progresso da coleção</h2>
-        <p><label for="progresso">Concluídos</label> <strong>58%</strong></p>
-        <p><small>28 de 48 jogos foram concluídos.</small></p>
+        <p class="acoes-rapidas__item"><a class="link" href="editar-jogo.html"><button id="botao-adicionar-novo-jogo" class="botao botao--principal" type="button">+ Adicionar novo jogo</button></a></p>
+        <p class="acoes-rapidas__item"><a class="link" href="catalogo.html"><button id="botao-explorar-catalogo" class="botao botao--secundario" type="button">Explorar catálogo</button></a></p>
+        <p class="acoes-rapidas__item"><a class="link" href="catalogo.html?status=jogando"><button id="botao-continuar-jogando" class="botao botao--secundario" type="button">▷ Continuar jogando</button></a></p>
 
       </section>
 
-      <section>
+      <section id="progresso-colecao" class="progresso">
 
-        <h2>Próxima Jogatina</h2>
-        <p><small>Nenhuma meta definida para esta semana.</small></p>
+        <h2 class="progresso__titulo">Progresso da coleção</h2>
+        <p class="progresso__linha"><label class="progresso__rotulo" for="progresso">Concluídos</label> <strong class="progresso__valor">58%</strong></p>
+        <p class="progresso__texto"><small>28 de 48 jogos foram concluídos.</small></p>
+
+      </section>
+
+      <section id="proxima-jogatina" class="proxima-jogatina">
+
+        <h2 class="proxima-jogatina__titulo">Próxima Jogatina</h2>
+        <p class="proxima-jogatina__texto"><small>Nenhuma meta definida para esta semana.</small></p>
 
       </section>
 

@@ -1,0 +1,438 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.pagina-app {
+  font-family: system-ui, "Segoe UI", sans-serif;
+  color: #1c1c1c;
+  background: #f1f1ef;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: auto 1fr;
+}
+
+.divisor {
+  display: none;
+}
+
+.link {
+  color: inherit;
+  font-weight: 600;
+  text-underline-offset: 2px;
+}
+
+.botao {
+  width: 100%;
+  padding: 12px;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.botao--principal {
+  color: #ffffff;
+  background: #222222;
+}
+
+.botao--principal:hover {
+  background: #000000;
+}
+
+.botao--secundario {
+  color: #1c1c1c;
+  background: #ffffff;
+  border: 1px solid #7d7d7b;
+}
+
+.botao--secundario:hover {
+  background: #f1f1ef;
+}
+
+.barra-lateral {
+  grid-row: 1 / -1;
+  background: #ffffff;
+  border-right: 1px solid #d6d6d2;
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.marca__nome {
+  font-size: 1.05rem;
+}
+
+.menu__rotulo {
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  color: #6f6f6f;
+  margin-bottom: 8px;
+}
+
+.menu__lista {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.menu__link {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: #1c1c1c;
+  text-decoration: none;
+}
+
+.menu__link:hover {
+  background: #f1f1ef;
+}
+
+.menu__link--ativo {
+  background: #e6e6e3;
+}
+
+.usuario {
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid #d6d6d2;
+}
+
+.usuario__nome {
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.usuario__email {
+  font-weight: 400;
+  color: #6f6f6f;
+}
+
+.topo {
+  background: #ffffff;
+  border-bottom: 1px solid #d6d6d2;
+  padding: 14px 32px;
+}
+
+.topo__conteudo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.8rem;
+}
+
+.topo__caminho {
+  margin-right: auto;
+  color: #6f6f6f;
+}
+
+.topo__rotulo {
+  color: #6f6f6f;
+}
+
+.topo__busca {
+  padding: 7px 10px;
+  font: inherit;
+  border: 1px solid #7d7d7b;
+  border-radius: 6px;
+}
+
+.topo__notificacoes {
+  color: inherit;
+  text-decoration: none;
+}
+
+.conteudo {
+  padding: 28px 32px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  column-gap: 20px;
+  row-gap: 20px;
+  align-content: start;
+}
+
+.cabecalho-pagina {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 16px;
+  align-items: start;
+}
+
+.cabecalho-pagina__titulo {
+  font-size: 1.6rem;
+}
+
+.cabecalho-pagina__descricao {
+  font-size: 0.9rem;
+  color: #6f6f6f;
+  margin-top: 4px;
+}
+
+.cabecalho-pagina__acoes {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+
+.cabecalho-pagina__acoes .link {
+  text-decoration: none;
+}
+
+.cabecalho-pagina__acoes .botao {
+  width: auto;
+  padding: 10px 16px;
+}
+
+.resumo-estante {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  overflow-x: auto;
+}
+
+.resumo-estante__tabela {
+  width: calc(100% + 32px);
+  margin-inline: -16px;
+  border-collapse: separate;
+  border-spacing: 16px 0;
+}
+
+.resumo-estante__titulo {
+  width: 25%;
+  padding: 16px 16px 4px;
+  text-align: left;
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #6f6f6f;
+  background: #ffffff;
+  border: 1px solid #d6d6d2;
+  border-bottom: 0;
+  border-radius: 10px 10px 0 0;
+}
+
+.resumo-estante__item {
+  padding: 0 16px 16px;
+  background: #ffffff;
+  border: 1px solid #d6d6d2;
+  border-top: 0;
+  border-radius: 0 0 10px 10px;
+}
+
+.resumo-estante__item br {
+  display: none;
+}
+
+.resumo-estante__numero {
+  display: block;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.resumo-estante__legenda {
+  font-size: 0.75rem;
+  color: #6f6f6f;
+}
+
+.jogos-recentes {
+  grid-column: 1;
+  grid-row: 3;
+  background: #ffffff;
+  border: 1px solid #d6d6d2;
+  border-radius: 10px;
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.jogos-recentes__titulo {
+  font-size: 1.1rem;
+}
+
+.jogos-recentes__cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.8rem;
+  margin-bottom: 16px;
+}
+
+.jogos-recentes__subtitulo {
+  color: #6f6f6f;
+}
+
+.tabela {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabela__titulo {
+  padding: 10px 12px;
+  text-align: left;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #6f6f6f;
+  background: #f7f7f5;
+  border-top: 1px solid #d6d6d2;
+  border-bottom: 1px solid #d6d6d2;
+}
+
+.tabela__celula {
+  padding: 14px 12px;
+  font-size: 0.85rem;
+  border-bottom: 1px solid #d6d6d2;
+}
+
+.tabela__corpo .tabela__linha:last-child .tabela__celula {
+  border-bottom: 0;
+}
+
+.tabela__celula--jogo br {
+  display: none;
+}
+
+.jogo__nome {
+  display: block;
+}
+
+.jogo__generos {
+  display: block;
+  font-size: 0.75rem;
+  color: #6f6f6f;
+}
+
+.tabela__celula--nota {
+  font-weight: 600;
+}
+
+.tabela__celula--data {
+  font-size: 0.8rem;
+  color: #6f6f6f;
+}
+
+.tabela__celula--acoes {
+  text-align: right;
+}
+
+.tabela__menu {
+  padding: 2px 8px;
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.painel-lateral {
+  grid-column: 2;
+  grid-row: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.acoes-rapidas,
+.progresso,
+.proxima-jogatina {
+  background: #ffffff;
+  border: 1px solid #d6d6d2;
+  border-radius: 10px;
+  padding: 18px;
+}
+
+.acoes-rapidas__titulo,
+.progresso__titulo,
+.proxima-jogatina__titulo {
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+.acoes-rapidas__item {
+  margin-bottom: 10px;
+}
+
+.acoes-rapidas__item:last-child {
+  margin-bottom: 0;
+}
+
+.acoes-rapidas__item .link {
+  display: block;
+  text-decoration: none;
+}
+
+.progresso__linha {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+}
+
+.progresso__texto {
+  color: #6f6f6f;
+}
+
+.proxima-jogatina {
+  background: transparent;
+  border-style: dashed;
+  text-align: center;
+}
+
+.proxima-jogatina__texto {
+  color: #6f6f6f;
+}
+
+
+@media (max-width: 860px) {
+  .pagina-app {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .barra-lateral {
+    grid-row: auto;
+    border-right: 0;
+    border-bottom: 1px solid #d6d6d2;
+  }
+
+  .topo {
+    padding: 12px 16px;
+  }
+
+  .topo__conteudo {
+    flex-wrap: wrap;
+  }
+
+  .conteudo {
+    padding: 20px 16px;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .cabecalho-pagina,
+  .resumo-estante,
+  .jogos-recentes,
+  .painel-lateral {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .cabecalho-pagina {
+    grid-template-columns: 1fr;
+    row-gap: 12px;
+  }
+
+  .cabecalho-pagina__acoes {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .resumo-estante__tabela {
+    min-width: 560px;
+  }
+}

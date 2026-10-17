@@ -4,123 +4,124 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>GamesShelf — Hades II</title>
+  <link rel="stylesheet" href="../assets/css/detalhes-jogos.css">
 </head>
-<body>
+<body id="pagina-detalhes" class="pagina-app">
 
-  <aside>
+  <aside id="barra-lateral" class="barra-lateral">
 
-    <header>
-      <p><strong>GamesShelf</strong></p>
+    <header id="marca" class="marca">
+      <p class="marca__nome"><strong>GamesShelf</strong></p>
     </header>
 
-    <nav aria-label="Navegação principal">
-      <p><small>NAVEGAÇÃO</small></p>
-      <ul>
-        <li><a href="dashboard.html">Dashboard</a></li>
-        <li><a href="catalogo.html" aria-current="page"><strong>Catálogo</strong></a></li>
-        <li><a href="adicionar-jogo.html">Adicionar jogo</a></li>
+    <nav id="menu" class="menu" aria-label="Navegação principal">
+      <p class="menu__rotulo"><small>NAVEGAÇÃO</small></p>
+      <ul class="menu__lista">
+        <li class="menu__item"><a class="menu__link" href="dashboard.html">Dashboard</a></li>
+        <li class="menu__item"><a class="menu__link menu__link--ativo" href="catalogo.html" aria-current="page"><strong>Catálogo</strong></a></li>
+        <li class="menu__item"><a class="menu__link" href="editar-jogo.html">Adicionar jogos</a></li>
       </ul>
     </nav>
 
-    <footer>
-        <p> Usuario <br>
-        <small> usuario@gmail.com </small> </p>
+    <footer id="usuario" class="usuario">
+        <p class="usuario__nome"> Usuario <br>
+        <small class="usuario__email"> usuario@gmail.com </small> </p>
     </footer>
 
   </aside>
 
-  <hr>
+  <hr class="divisor">
 
-  <header>
+  <header id="topo" class="topo">
 
-    <p>
-      <small>GamesShelf / Catálogo / Hades II</small>
-      <span></span>
-      <label for="busca">Buscar</label>
-      <input type="search" id="busca" name="busca" placeholder="">
-      <span></span>
-      <a href="#" aria-label="Notificações">Notificações</a>
+    <p class="topo__conteudo">
+      <small class="topo__caminho">GamesShelf / Catálogo / Hades II</small>
+      <span class="topo__separador"></span>
+      <label class="topo__rotulo" for="busca">Buscar</label>
+      <input class="topo__busca" type="search" id="busca" name="busca" placeholder="">
+      <span class="topo__separador"></span>
+      <a class="topo__notificacoes" href="#" aria-label="Notificações">Notificações</a>
     </p>
 
   </header>
 
-  <main>
-    <p>
-      <a href="catalogo.html">← Voltar ao catálogo</a>
-      <span></span>>
-      <button type="button"> Excluir </button>
-      <a href="editar-jogo.html"><button type="button"> Editar jogo </button></a>
+  <main id="conteudo" class="conteudo">
+    <p id="barra-acoes" class="barra-acoes">
+      <a class="barra-acoes__voltar" href="catalogo.html">← Voltar ao catálogo</a>
+      <span class="barra-acoes__separador"></span>
+      <button id="botao-excluir" class="botao botao--secundario" type="button"> Excluir </button>
+      <a class="barra-acoes__link" href="editar-jogo.html"><button id="botao-editar-jogo" class="botao botao--secundario" type="button"> Editar jogo </button></a>
     </p>
 
-    <article>
+    <article id="detalhes-jogo" class="detalhes-jogo">
 
-      <aside>
-        <figure>
-          <p>Capa</p>
-          <img src="../assets/imgs/Hades.jpg" alt="Capa de Hades II" width="150">
+      <aside id="lateral-jogo" class="detalhes-jogo__lateral">
+        <figure id="figura-capa" class="capa">
+          <p class="capa__rotulo">Capa</p>
+          <img class="capa__imagem" src="../assets/imgs/Hades.jpg" alt="Capa de Hades II" width="150">
         </figure>
 
-        <form action="#" method="post" enctype="multipart/form-data">
-          <p>
-            <label for="capa"><small>Substituir pelo upload da capa do jogo.</small></label><br>
-            <input type="file" id="capa" name="capa" accept="image/*">
+        <form id="upload-capa" class="upload-capa" action="#" method="post" enctype="multipart/form-data">
+          <p class="upload-capa__campo">
+            <label class="upload-capa__rotulo" for="capa"><small>Substituir pelo upload da capa do jogo.</small></label><br>
+            <input class="upload-capa__input" type="file" id="capa" name="capa" accept="image/*">
           </p>
         </form>
 
-        <dl>
-          <dt><small>Adicionado em</small></dt>
-          <dd><strong>xx xx xx</strong></dd>
-          <dt><small>Última alteração</small></dt>
-          <dd><strong>xx xx xx</strong></dd>
+        <dl id="registro-jogo" class="registro">
+          <dt class="registro__rotulo"><small>Adicionado em</small></dt>
+          <dd class="registro__valor"><strong>xx xx xx</strong></dd>
+          <dt class="registro__rotulo"><small>Última alteração</small></dt>
+          <dd class="registro__valor"><strong>xx xx xx</strong></dd>
         </dl>
       </aside>
       
-      <section>
-        <h1>Hades II</h1>
-        <p><strong>[Jogando]</strong> Ação - Roguelike - Indie</p>
+      <section id="informacoes-jogo" class="informacoes-jogo">
+        <h1 class="informacoes-jogo__titulo">Hades II</h1>
+        <p class="informacoes-jogo__resumo"><strong class="informacoes-jogo__status">[Jogando]</strong> Ação - Roguelike - Indie</p>
 
-        <p>
-          <small>MINHA NOTA</small><br>
-          <strong>9,2</strong><br>
-          <small>de 10</small>
+        <p id="nota-jogo" class="nota">
+          <small class="nota__rotulo">MINHA NOTA</small><br>
+          <strong class="nota__valor">9,2</strong><br>
+          <small class="nota__escala">de 10</small>
         </p>
 
-        <hr>
+        <hr class="separador-secao">
 
-        <dl>
-          <dt><small>CATEGORIA</small></dt>
-          <dd><strong>Ação / Roguelike</strong></dd>
+        <dl id="ficha-jogo" class="ficha">
+          <dt class="ficha__rotulo"><small>CATEGORIA</small></dt>
+          <dd class="ficha__valor"><strong>Ação / Roguelike</strong></dd>
 
-          <dt><small>PLATAFORMA</small></dt>
-          <dd><strong>PC (Steam)</strong></dd>
+          <dt class="ficha__rotulo"><small>PLATAFORMA</small></dt>
+          <dd class="ficha__valor"><strong>PC (Steam)</strong></dd>
 
-          <dt><small>TEMPO JOGADO</small></dt>
-          <dd><strong>18 h 42 min</strong></dd>
+          <dt class="ficha__rotulo"><small>TEMPO JOGADO</small></dt>
+          <dd class="ficha__valor"><strong>18 h 42 min</strong></dd>
 
-          <dt><small>INICIADO EM</small></dt>
-          <dd><strong>08 set. 2026</strong></dd>
+          <dt class="ficha__rotulo"><small>INICIADO EM</small></dt>
+          <dd class="ficha__valor"><strong>08 set. 2026</strong></dd>
         </dl>
 
-        <hr>
+        <hr class="separador-secao">
 
-        <h2>Minha avaliação</h2>
-        <blockquote>
-          <p>Hades II mantém o ritmo viciante do primeiro jogo e aprofunda as possibilidades de combate. A progressão é satisfatória, os personagens têm diálogos excelentes e cada tentativa parece acrescentar algo novo. Ainda está em acesso antecipado, mas já é uma experiência muito completa.</p>
-          <p><small>Avaliação atualizada em xx xx xx</small></p>
+        <h2 class="avaliacao__titulo">Minha avaliação</h2>
+        <blockquote id="avaliacao-jogo" class="avaliacao">
+          <p class="avaliacao__texto">Hades II mantém o ritmo viciante do primeiro jogo e aprofunda as possibilidades de combate. A progressão é satisfatória, os personagens têm diálogos excelentes e cada tentativa parece acrescentar algo novo. Ainda está em acesso antecipado, mas já é uma experiência muito completa.</p>
+          <p class="avaliacao__data"><small>Avaliação atualizada em xx xx xx</small></p>
         </blockquote> 
       </section>
 
     </article>
 
-    <section>
-      <form action="#" method="post">
-        <fieldset>
-          <legend>Atualizar status da jogatina</legend>
-          <p><small>A alteração será registrada no histórico do jogo.</small></p>
+    <section id="atualizar-status" class="atualizar-status">
+      <form class="atualizar-status__form" action="#" method="post">
+        <fieldset class="atualizar-status__grupo">
+          <legend class="atualizar-status__titulo">Atualizar status da jogatina</legend>
+          <p class="atualizar-status__aviso"><small>A alteração será registrada no histórico do jogo.</small></p>
 
-          <p>
-            <label for="novo-status">Novo status</label><br>
-            <select id="novo-status" name="status">
+          <p class="campo">
+            <label class="campo__rotulo" for="novo-status">Novo status</label><br>
+            <select class="campo__select" id="novo-status" name="status">
               <option value="quero-jogar">Quero jogar</option>
               <option value="jogando" selected>Jogando</option>
               <option value="concluido">Concluído</option>
@@ -128,7 +129,7 @@
             </select>
           </p>
 
-          <p><button type="submit">Salvar status</button></p>
+          <p class="atualizar-status__acoes"><button id="botao-salvar-status" class="botao botao--principal" type="submit">Salvar status</button></p>
         </fieldset>
       </form>
     </section>

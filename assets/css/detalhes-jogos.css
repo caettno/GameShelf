@@ -1,0 +1,341 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.pagina-app {
+  font-family: system-ui, "Segoe UI",  sans-serif;
+  color: #1c1c1c;
+  background: #f1f1ef;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: auto 1fr;
+}
+
+.divisor {
+  display: none;
+}
+
+.botao {
+  width: 100%;
+  padding: 12px;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.botao--principal {
+  color: #ffffff;
+  background: #222222;
+}
+
+.botao--principal:hover {
+  background: #000000;
+}
+
+.botao--secundario {
+  color: #1c1c1c;
+  background: #ffffff;
+  border: 1px solid #7d7d7b;
+}
+
+.botao--secundario:hover {
+  background: #f1f1ef;
+}
+
+.campo br {
+  display: none;
+}
+
+.campo__rotulo {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.campo__select {
+  width: 100%;
+  padding: 11px 12px;
+  font: inherit;
+  font-size: 0.85rem;
+  border: 1px solid #7d7d7b;
+  border-radius: 6px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.barra-lateral {
+  grid-row: 1 / -1;
+  background: #ffffff;
+  border-right: 1px solid #d6d6d2;
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.marca__nome {
+  font-size: 1.05rem;
+}
+
+.menu__rotulo {
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  color: #6f6f6f;
+  margin-bottom: 8px;
+}
+
+.menu__lista {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.menu__link {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: #1c1c1c;
+  text-decoration: none;
+}
+
+.menu__link:hover {
+  background: #f1f1ef;
+}
+
+.menu__link--ativo {
+  background: #e6e6e3;
+}
+
+.usuario {
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid #d6d6d2;
+}
+
+.usuario__nome {
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.usuario__email {
+  font-weight: 400;
+  color: #6f6f6f;
+}
+
+.topo {
+  background: #ffffff;
+  border-bottom: 1px solid #d6d6d2;
+  padding: 14px 32px;
+}
+
+.topo__conteudo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.8rem;
+}
+
+.topo__caminho {
+  margin-right: auto;
+  color: #6f6f6f;
+}
+
+.topo__separador {
+  width: 1px;
+  height: 18px;
+  background: #d6d6d2;
+}
+
+.topo__rotulo {
+  color: #6f6f6f;
+}
+
+.topo__busca {
+  padding: 7px 10px;
+  font: inherit;
+  border: 1px solid #7d7d7b;
+  border-radius: 6px;
+}
+
+.topo__notificacoes {
+  color: inherit;
+  text-decoration: none;
+}
+
+.conteudo {
+  padding: 28px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.barra-acoes {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.barra-acoes__voltar {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: inherit;
+  text-decoration: none;
+}
+
+.barra-acoes__voltar:hover {
+  text-decoration: underline;
+}
+
+.barra-acoes__separador {
+  flex: 1;
+}
+
+.barra-acoes__link {
+  text-decoration: none;
+}
+
+.barra-acoes .botao {
+  width: auto;
+  padding: 10px 16px;
+}
+
+.detalhes-jogo {
+  background: #ffffff;
+  border: 1px solid #d6d6d2;
+  border-radius: 10px;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.detalhes-jogo__lateral {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.capa__rotulo {
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #6f6f6f;
+  margin-bottom: 6px;
+}
+
+.capa__imagem {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border: 1px solid #d6d6d2;
+  border-radius: 8px;
+  background: #ececea;
+}
+
+.upload-capa__campo {
+  padding: 10px 12px;
+  background: #f7f7f5;
+  border: 1px solid #d6d6d2;
+  border-radius: 6px;
+}
+
+.upload-capa__campo br {
+  display: none;
+}
+
+.upload-capa__rotulo {
+  display: block;
+  color: #6f6f6f;
+  margin-bottom: 8px;
+}
+
+.upload-capa__input {
+  width: 100%;
+  font: inherit;
+  font-size: 0.75rem;
+}
+
+.registro {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  row-gap: 8px;
+  column-gap: 12px;
+  padding: 12px;
+  background: #f7f7f5;
+  border: 1px solid #d6d6d2;
+  border-radius: 6px;
+  font-size: 0.8rem;
+}
+
+.registro__rotulo {
+  color: #6f6f6f;
+}
+
+.registro__valor {
+  text-align: right;
+}
+
+.informacoes-jogo {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 20px;
+  align-content: start;
+}
+
+.informacoes-jogo__titulo {
+  grid-column: 1;
+  font-size: 2rem;
+  line-height: 1.15;
+}
+
+.informacoes-jogo__resumo {
+  grid-column: 1;
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: #6f6f6f;
+}
+
+.informacoes-jogo__status {
+  color: #1c1c1c;
+}
+
+.nota {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  text-align: center;
+  padding: 10px 18px;
+  background: #f7f7f5;
+  border: 1px solid #7d7d7b;
+  border-radius: 8px;
+}
+
+.nota br {
+  display: none;
+}
+
+.nota__rotulo {
+  display: block;
+  font-size: 0.65rem;
+  letter-spacing: 0.05em;
+  color: #6f6f6f;
+}
+
+.nota__valor {
+  display: block;
+  font-size: 1.7rem;
+  line-height: 1.2;
+}
+

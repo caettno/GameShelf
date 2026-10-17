@@ -5,91 +5,91 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>GamesShelf</title>
 </head>
-<body>
+<body class="pagina-acesso">
 
-  <aside>
+  <aside class="painel-marca">
 
-    <header>
-      <p><strong> GamesShelf </strong></p>
+    <header class="marca">
+      <p class="marca__nome"><strong> GamesShelf </strong></p>
     </header>
 
-    <section>
+    <section class="apresentacao">
 
-      <p> SUA ESTANTE DE JOGOS </p>
-      <h1> Organize o que você joga. Lembre do que sentiu. </h1>
-      <p> Catalogue jogos, acompanhe sua jornada e registre avaliações em um só lugar. </p>
+      <p class="apresentacao__rotulo"> SUA ESTANTE DE JOGOS </p>
+      <h1 class="apresentacao__titulo"> Organize o que você joga. Lembre do que sentiu. </h1>
+      <p class="apresentacao__texto"> Catalogue jogos, acompanhe sua jornada e registre avaliações em um só lugar. </p>
       
-      <ul>
-        <li>Quero jogar</li>
-        <li>Jogando</li>
-        <li>Concluído</li>
-        <li>Abandonado</li>
+      <ul class="tags">
+        <li class="tags__item">Quero jogar</li>
+        <li class="tags__item">Jogando</li>
+        <li class="tags__item">Concluído</li>
+        <li class="tags__item">Abandonado</li>
       </ul>
     
     </section>
 
   </aside>
 
-  <main>
+  <main class="painel-acesso">
 
-    <details name="acesso" open>
-      <summary>Entrar</summary>
+    <details class="aba aba--login" name="acesso" open>
+      <summary class="aba__titulo">Entrar</summary>
 
-      <h2>Bem-vindo de volta</h2>
+      <h2 class="aba__chamada">Bem-vindo de volta</h2>
       
-      <p>Entre para continuar organizando sua coleção.</p>
+      <p class="aba__descricao">Entre para continuar organizando sua coleção.</p>
 
-      <form action="pages/dashboard.html" method="get">
+      <form class="formulario formulario--login" action="pages/dashboard.html" method="get">
 
-        <p>
-          <label for="login-email">E-mail <abbr title="obrigatório">*</abbr></label><br>
-          <input type="email" id="login-email" name="email" placeholder="voce@exemplo.com" autocomplete="email">
+        <p class="campo">
+          <label class="campo__rotulo" for="login-email">E-mail <abbr class="campo__obrigatorio" title="obrigatório">*</abbr></label><br>
+          <input class="campo__input" type="email" id="login-email" name="email" placeholder="voce@exemplo.com" autocomplete="email">
         </p>
 
-        <p>
-          <label for="login-senha">Senha <abbr title="obrigatório">*</abbr></label><br>
-          <input type="password" id="login-senha" placeholder="••••••••" autocomplete="current-password">
+        <p class="campo">
+          <label class="campo__rotulo" for="login-senha">Senha <abbr class="campo__obrigatorio" title="obrigatório">*</abbr></label><br>
+          <input class="campo__input" type="password" id="login-senha" placeholder="••••••••" autocomplete="current-password">
         </p>
 
-        <p>
-          <label><input type="checkbox" name="lembrar"> Lembrar de mim</label>
-          <span></span>
-          <a href="#">Esqueci minha senha</a>
+        <p class="formulario__opcoes">
+          <label class="opcao"><input class="opcao__input" type="checkbox" name="lembrar"> Lembrar de mim</label>
+          <span class="formulario__separador"></span>
+          <a class="link" href="#">Esqueci minha senha</a>
         </p>
 
-        <p><button type="submit">Entrar na minha estante</button></p>
+        <p class="formulario__acoes"><button class="botao botao--principal" type="submit">Entrar na minha estante</button></p>
       </form>
 
-      <p>Ainda não possui conta? Abra a aba Criar conta abaixo.</p>
+      <p class="aba__rodape">Ainda não possui conta? Abra a aba Criar conta abaixo.</p>
 
     </details>
 
-    <details name="acesso">
+    <details class="aba aba--cadastro" name="acesso">
 
-      <summary>Criar conta</summary>
+      <summary class="aba__titulo">Criar conta</summary>
 
-      <h2>Crie sua estante</h2>
+      <h2 class="aba__chamada">Crie sua estante</h2>
 
-      <p>Leva menos de um minuto para começar a catalogar.</p>
+      <p class="aba__descricao">Leva menos de um minuto para começar a catalogar.</p>
 
-      <form action="pages/dashboard.html" method="get">
+      <form class="formulario formulario--cadastro" action="pages/dashboard.html" method="get">
 
-        <p>
-          <label for="signup-nome">Nome <abbr title="obrigatório">*</abbr></label><br>
-          <input type="text" id="signup-nome" name="nome" placeholder="Como devemos te chamar?" autocomplete="name">
+        <p class="campo">
+          <label class="campo__rotulo" for="signup-nome">Nome <abbr class="campo__obrigatorio" title="obrigatório">*</abbr></label><br>
+          <input class="campo__input" type="text" id="signup-nome" name="nome" placeholder="Como devemos te chamar?" autocomplete="name">
         </p>
 
-        <p>
-          <label for="signup-email">E-mail <abbr title="obrigatório">*</abbr></label><br>
-          <input type="email" id="signup-email" name="email" placeholder="voce@exemplo.com" autocomplete="email">
+        <p class="campo">
+          <label class="campo__rotulo" for="signup-email">E-mail <abbr class="campo__obrigatorio" title="obrigatório">*</abbr></label><br>
+          <input class="campo__input" type="email" id="signup-email" name="email" placeholder="voce@exemplo.com" autocomplete="email">
         </p>
 
-        <p>
-          <label for="signup-senha">Senha <abbr title="obrigatório">*</abbr></label><br>
-          <input type="password" id="signup-senha" placeholder="Mínimo de 8 caracteres" autocomplete="new-password" minlength="8">
+        <p class="campo">
+          <label class="campo__rotulo" for="signup-senha">Senha <abbr class="campo__obrigatorio" title="obrigatório">*</abbr></label><br>
+          <input class="campo__input" type="password" id="signup-senha" placeholder="Mínimo de 8 caracteres" autocomplete="new-password" minlength="8">
         </p>
 
-        <p><button type="submit">Criar conta grátis</button></p>
+        <p class="formulario__acoes"><button class="botao botao--principal" type="submit">Criar conta grátis</button></p>
 
       </form>
       
